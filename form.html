@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class=" flex mt-[50px justify-center]">
+    <form class="bg-blue-200 rounded w-[400px] p-10 " >
+    <label>Enter your name</label>
+    <br>
+    <input id="username" class="w-[300px] round rounded-xl py-1 outline-0" type="text">
+    <br>
+    <label>password</label>
+    <br>
+    <input id="password" onkeyup="checkpasswordlength()" class="w-[300px] round rounded-xl py-1 outline-0" type="text">
+    <span id="passwordtext"></span>
+    <br>
+    
+    <label>confirmpass</label>
+    <br>
+    <input id="confirmpass" class="w-[300px] round rounded-xl py-1 outline-0" type="text">
+    <br>
+    <span id="passworderror"></span>
+    <button id="loginbtn" class="bg-blue-300 font-bold text-black px-10 py-2 mt-10 rounded hover:">login</button>
+</form>
+</div>
+<script src="form.js"></script>
+    
+</body>
+</html>
